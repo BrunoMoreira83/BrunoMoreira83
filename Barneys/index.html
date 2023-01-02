@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barney's - Cardápio Web</title>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/e74072200a.js" crossorigin="anonymous"></script>
+    <!--Progress Bar-->
+    <script src="js/progressbar.min.js"></script>
+    <!--Parallax-->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="img/barney_logo.png" alt="hDC Agency"> Barney's - Cardápio
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="refeicao-menu" href="#refeicoes">Refeiçoes</a>
+                        <a class="nav-item nav-link" id="bebidassemalcool-menu"href="#bebidas-sem">Bebidas sem Alcool</a>
+                        <a class="nav-item nav-link" id="bebidascomalcool-menu" href="#bebidas-com">Bebidas com Alcool</a>
+                        <a class="nav-item nav-link" id="600ml-menu">Cervejas 600ml</a>
+                        <a class="nav-item nav-link" id="longneck-menu">Cervejas Long Neck</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <!--CARDAPIO-->
+        <div class="container">
+            <div id="cardapio-area">                
+                <div class="container">
+                    <!--DESTAQUE-->                    
+                        <div class="row">
+                            <div class="col-12">                            
+                                <h3 id="destaque">destaque</h3>                            
+                            </div>
+                            <div class="col-md-4 destaque-box">
+                                <div class="media-destaque">
+                                    <img class="align-self-center mr-3" src="img/corvina1.jfif" alt="Corvina Completa">
+                                    <div class="media-body">
+                                        <h5>Corvina</h5>
+                                        <p>2 PESSOAS <br> SIMPLES R$ 80,00 / COMPLETA R$ 90,00</p>
+                                        <p>4 PESSOAS <br> SIMPLES R$ 110,00 / COMPLETA R$ 130,00</p>
+                                        <p>6 PESSOAS <br> SIMPLES R$ 80,00 / COMPLETA R$ 90,00</p>
+                                        <p>8 PESSOAS <br> SIMPLES R$ 80,00 / COMPLETA R$ 90,00</p>
+                                        <p class="destaque-rodape">* Acompanhamento do Peixe completo: Arroz, Pirão, Salada e Molho de camarão decorativo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 destaque-box">
+                                <div class="media-destaque">
+                                    <img class="align-self-center mr-3" src="img/barca-caranguejo.jfif" alt="Barca Caranguejo">
+                                    <div class="media-body">
+                                        <h5>Barca de Caranguejo</h5>
+                                        <p>04 Caranguejos + Arroz + Farofa + Pirão</p>
+                                        <p>R$ 60,00</p>
+                                        <p class="destaque-rodape">*Grátis Uma caipirinha</p>
+                                        <p>Caranguejo Unidade</p>
+                                        <p>R$ 8,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 destaque-box">
+                                <div class="media-destaque">
+                                    <img class="align-self-center mr-3" src="img/chopp-tulipa2.jpg" alt="Chop Ecobeer">
+                                    <div class="media-body">
+                                        <h5>Chopp</h5>
+                                        <p>TULIPA DE CHOPP</p>
+                                        <p>300ml R$ 5,00</p>
+                                        <p>500ml R$ 8,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                <!--REFEIÇÕES-->
+                    <div class="row">                        
+                        <div class="col-12">
+                            <h3 class="main-title">Refeições</h3>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <div class="media">              
+                                <img class="align-self-center mr-3" src="img/camarao-na-moranga.jpg" alt="Camarão na Moranga">
+                                <div class="media-body">
+                                    <h5>Camarão na Moranga</h5>
+                                    <!--<p class="principal">Filé de Frango a Parmegiana</p>-->
+                                    <p class="complemento">Acompanha Arroz com Brócolis</p>
+                                    <p class="valor">R$ 100,00</p>
+                                    <p class="quantidade">Serve 2 Pessoa</p>
+                                    <p class="destaque-rodape">* Imagem meramente ilustrativa.</p>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-4 cardapio-box">
+                                <div class="media">              
+                                        <img class="align-self-center mr-3" src="img/gurjao-peixe.jpeg" alt="Gurjão de Peixe">
+                                    <div class="media-body">
+                                        <h5>Gurjão de Peixa Completo</h5>
+                                        <!--<p class="principal">Filé de Frango a Parmegiana</p>-->
+                                        <p class="complemento">Arroz, Pirão e Salada.</p>
+                                        <p class="valor">R$ 80,00</p>
+                                        <p class="quantidade">Serve 2 Pessoa</p>
+                                        <p class="destaque-rodape">* Imagem meramente ilustrativa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 cardapio-box">
+                                <div class="media">              
+                                        <img class="align-self-center mr-3" src="img/churrassco-misto.png.crdownload" alt="Churrasco Misto">
+                                    <div class="media-body">
+                                        <h5>Churrasco Misto Completo</h5>
+                                        <!--<p class="principal">Filé de Frango a Parmegiana</p>-->
+                                        <p class="complemento">Arroz, Carne, Frango, Farofa, Fritas e Molho.</p>
+                                        <p class="valor">R$ 90,00</p>
+                                        <p class="quantidade">Serve 2 Pessoa</p>
+                                        <p class="destaque-rodape">* Imagem meramente ilustrativa.</p>
+                                    </div>
+                                </div>
+                            </div>                        
+                    </div>
+                    <div class="row">                        
+                        <div class="col-12">
+                            <h3 class="main-title" id="bebidas-sem">Bebida sem Alcool</h3>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                    </div>
+                    <div class="row">                        
+                        <div class="col-12">
+                            <h3 class="main-title" id="bebidas-com">Bebida Com Alcool</h3>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                        <div class="col-md-4 cardapio-box">
+                            <p class="principal">Comida 1</p>
+                            <p class="complemento">Complemento1</p>
+                            <p class="valor">R$ 00,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>    
+    <!--Scripts do Projeto-->
+    <script src="js/scripts.js"></script>
+</body>
+</html>

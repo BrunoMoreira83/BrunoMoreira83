@@ -1,0 +1,172 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+    width: 120%;
+}
+
+.container {
+    padding: 90px;
+    position:absolute;
+
+}
+
+p, li {
+    color: #444;
+    font-size: 14px;
+}
+
+/*h3 {
+    text-align: center;
+    font-weight: bold;
+}*/
+
+/* Barra de navegação */
+header, .navbar {
+    background-color: #A9A9A9;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 146px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #000000;
+}
+
+.navbar-brand:hover {
+    color: #000000;
+}
+
+#navbar-links a {
+    color: #fcfcfc;
+    font-size: 18px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/*DESTAQUE*/
+#destaque {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;  
+    padding: 10px;  
+}
+
+.media-destaque {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0px 0px 20px 4px rgb(201, 199, 199);
+    width: 360px;
+    height: 500px;
+}
+
+.media-destaque h5{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 5px;
+}
+
+.media-destaque P{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 1%;
+    font-style: italic;
+}
+
+.media-destaque img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.destaque-rodape {
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* CARDAPIO */
+.main-title {
+    color: #000000;
+    margin: 10px 0 10px 0;
+    font-size: 28px;
+    text-align:left;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.main-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    /*position: absolute;*/
+    top: 40px;
+    left: 42.5%;
+}
+
+.cardapio-box {
+    text-align: right;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10%;
+    border-left: none;
+    /*border-top: none;*/
+    border-bottom: none;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.principal {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.complemento {
+    font-style: italic;
+    font-size: 13px;
+}
+
+.valor {
+    font-size: 20px;
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+.quantidade {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.media img {
+    max-width: 120px;
+}
+
+.media h5 {
+    padding: 5px;
+}
